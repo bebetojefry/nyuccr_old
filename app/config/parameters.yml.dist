@@ -1,0 +1,23 @@
+# This file is a "template" of what your parameters.yml file should look like
+# Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
+# http://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
+parameters:
+    database_driver: pdo_mysql
+    database_host: oralcdcddb001.nyumc.org
+    database_port: 3325
+    database_name: chargecoderequest
+    database_user: ccr_adm
+    database_password: changeme
+    # You should uncomment this if you want use pdo_sqlite
+    # database_path: "%kernel.root_dir%/data.db3"
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    # A secret key that's used to generate certain security-related tokens
+    secret:            ThisTokenIsNotSoSecretChangeIt
+    
+    api_endpoint:   http://ip.jsontest.com
+    appsec_api_url: 'https://weblcdcqvm001.nyumc.org/authservice/authorize'

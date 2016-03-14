@@ -1,0 +1,9 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+imag_ldap:
+    resource: "@IMAGLdapBundle/Resources/config/routing.yml"
+jstranslations:
+    resource: "@FunddyJsTranslationsBundle/Resources/config/routing.yml"
